@@ -17,9 +17,16 @@ int main() {
     printf("Sum: %d\n", num1+num2);
     printf("Difference: %d\n", num1-num2);
     printf("Product: %d\n", num1*num2);
-    quotient = (float) num1 / num2;
-    printf("Quotient: %.2f\n", quotient);
-    printf("Modulo: %d", num1%num2);
+    
+    if (num2!=0){
+        quotient = (float) num1 / num2;
+        printf("Quotient: %.2f\n", quotient);
+        printf("Modulo: %d", num1%num2);
+    } else {
+        printf("Can't divide zero.");
+    }
+    
+    
     return 0;
 
 }
